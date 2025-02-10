@@ -13,7 +13,7 @@
     },
     {
       "key": "ctrl+shift+j",
-      "command": "workbench.action.togglePanel"
+      "command": "workbench.action.terminal.toggleTerminal"
     },
     {
       "key": "ctrl+shift+o",
@@ -28,11 +28,11 @@
     // FILE TREE
     {
       "command": "workbench.action.toggleSidebarVisibility",
-      "key": "-"
+      "key": "ctrl+shift+e"
     },
     {
       "command": "workbench.files.action.focusFilesExplorer",
-      "key": "-",
+      "key": "ctrl+shift+e",
       "when": "editorTextFocus"
     },
     {

@@ -8,8 +8,6 @@
   "launch": {},
   "[json]": {},
   "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
   "update.showReleaseNotes": false,
   "zenMode.hideLineNumbers": false,
   "editor.lineNumbers": "relative",
@@ -17,12 +15,8 @@
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
   "vim.normalModeKeyBindingsNonRecursive": [
-    // NAVIGATION
-    // switch b/w buffers
     { "before": ["<S-h>"], "commands": [":bprevious"] },
     { "before": ["<S-l>"], "commands": [":bnext"] },
-
-    // panes
     {
       "before": ["<C-h>"],
       "commands": ["workbench.action.focusLeftGroup"]
@@ -39,7 +33,6 @@
       "before": ["<C-l>"],
       "commands": ["workbench.action.focusRightGroup"]
     },
-    // NICE TO HAVE
     { "before": ["leader", "w"], "commands": [":w"] },
     { "before": ["leader", "q"], "commands": [":q"] },
     { "before": ["leader", "x"], "commands": [":x"] },
@@ -74,10 +67,6 @@
       "commands": ["vscode-harpoon.editEditors"]
     },
     {
-      "before": ["<leader>", "p", "e"],
-      "commands": ["vscode-harpoon.editorQuickPick"]
-    },
-    {
       "before": ["<leader>", "h"],
       "commands": ["vscode-harpoon.gotoEditor1"]
     },
@@ -101,15 +90,32 @@
         "before": ["S"],
         "commands": ["leap.findBackward"]
     },
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["<leader>", "g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+        "before": ["<C-t>"],
+        "commands": ["workbench.action.navigateBack"]
+    },
+    {
+        "before": ["<C-o>"],
+        "commands": ["workbench.action.navigateBack"]
+    },
+    {
+        "before": ["<C-i>"],
+        "commands": ["workbench.action.navigateForward"]
+    }
   ],
   "vim.visualModeKeyBindings": [
-    // Stay in visual mode while indenting
     { "before": ["<"], "commands": ["editor.action.outdentLines"] },
     { "before": [">"], "commands": ["editor.action.indentLines"] },
-    // Move selected lines while staying in visual mode
     { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
-    // toggle comment selection
     { "before": ["<leader>", "y"], "after": ["\"", "+", "y"] },
     { "before": ["<leader>", "Y"], "after": ["\"", "+", "Y"] },
     { "before": ["<leader>", "d"], "after": ["\"", "_", "d", "d"] },
@@ -128,5 +134,11 @@
   "workbench.activityBar.location": "hidden",
   "window.menuBarVisibility": "toggle",
   "workbench.colorTheme": "Bearded Theme Arc Reversed",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "JetBrainsMonoNL NerdFont",
+  "breadcrumbs.enabled": false,
+  "editor.occurrencesHighlight": "off",
+  "editor.selectionHighlight": false,
+  "editor.gotoLocation.multipleImplementations": "goto"
 }
