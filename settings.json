@@ -140,5 +140,6 @@
   "breadcrumbs.enabled": false,
   "editor.occurrencesHighlight": "off",
   "editor.selectionHighlight": false,
-  "editor.gotoLocation.multipleImplementations": "goto"
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "workbench.editor.showTabs": "single"
 }
