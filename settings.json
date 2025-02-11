@@ -4,132 +4,392 @@
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "editor.linkedEditing": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "window.zoomLevel": 0.5,
   "launch": {},
   "[json]": {},
   "editor.minimap.enabled": false,
   "update.showReleaseNotes": false,
   "zenMode.hideLineNumbers": false,
   "editor.lineNumbers": "relative",
-
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
   "vim.normalModeKeyBindingsNonRecursive": [
-    { "before": ["<S-h>"], "commands": [":bprevious"] },
-    { "before": ["<S-l>"], "commands": [":bnext"] },
     {
-      "before": ["<C-h>"],
-      "commands": ["workbench.action.focusLeftGroup"]
+      "before": [
+        "<S-h>"
+      ],
+      "commands": [
+        ":bprevious"
+      ]
     },
     {
-      "before": ["<C-j>"],
-      "commands": ["workbench.action.focusBelowGroup"]
+      "before": [
+        "<S-l>"
+      ],
+      "commands": [
+        ":bnext"
+      ]
     },
     {
-      "before": ["<C-k>"],
-      "commands": ["workbench.action.focusAboveGroup"]
+      "before": [
+        "<C-h>"
+      ],
+      "commands": [
+        "workbench.action.focusLeftGroup"
+      ]
     },
     {
-      "before": ["<C-l>"],
-      "commands": ["workbench.action.focusRightGroup"]
-    },
-    { "before": ["leader", "w"], "commands": [":w"] },
-    { "before": ["leader", "q"], "commands": [":q"] },
-    { "before": ["leader", "x"], "commands": [":x"] },
-    {
-      "before": ["[", "d"],
-      "commands": ["editor.action.marker.prev"]
+      "before": [
+        "<C-j>"
+      ],
+      "commands": [
+        "workbench.action.focusBelowGroup"
+      ]
     },
     {
-      "before": ["]", "d"],
-      "commands": ["editor.action.marker.next"]
+      "before": [
+        "<C-k>"
+      ],
+      "commands": [
+        "workbench.action.focusAboveGroup"
+      ]
     },
     {
-      "before": ["<leader>", "c", "a"],
-      "commands": ["editor.action.quickFix"]
-    },
-    { "before": ["<C-p>"], "commands": ["workbench.action.quickOpen"] },
-    { "before": ["<leader>", "f"], "commands": ["editor.action.formatDocument"] },
-    {
-      "before": ["K"], "commands": ["editor.action.showDefinitionPreviewHover"]
-    },
-    { "before": ["<Esc>"], "commands": [":nohlsearch"] },
-    { "before": ["<leader>", "y"], "after": ["\"", "+", "y"] },
-    { "before": ["<leader>", "Y"], "after": ["\"", "+", "Y"] },
-    { "before": ["<leader>", "d"], "after": ["\"", "_", "d", "d"] },
-    { "before": ["<leader>", "x"], "after": ["\"", "_", "x"] },
-    {
-      "before": ["<leader>", "a"],
-      "commands": ["vscode-harpoon.addEditor"]
+      "before": [
+        "<C-l>"
+      ],
+      "commands": [
+        "workbench.action.focusRightGroup"
+      ]
     },
     {
-      "before": ["<leader>", "e"],
-      "commands": ["vscode-harpoon.editEditors"]
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        ":w"
+      ]
     },
     {
-      "before": ["<leader>", "h"],
-      "commands": ["vscode-harpoon.gotoEditor1"]
+      "before": [
+        "leader",
+        "q"
+      ],
+      "commands": [
+        ":q"
+      ]
     },
     {
-      "before": ["<leader>", "j"],
-      "commands": ["vscode-harpoon.gotoEditor2"]
+      "before": [
+        "leader",
+        "x"
+      ],
+      "commands": [
+        ":x"
+      ]
     },
     {
-      "before": ["<leader>", "k"],
-      "commands": ["vscode-harpoon.gotoEditor3"]
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.prev"
+      ]
     },
     {
-      "before": ["<leader>", "l"],
-      "commands": ["vscode-harpoon.gotoEditor4"]
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.next"
+      ]
     },
     {
-        "before": ["s"],
-        "commands": ["leap.findForward"]
+      "before": [
+        "<leader>",
+        "c",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
     },
     {
-        "before": ["S"],
-        "commands": ["leap.findBackward"]
+      "before": [
+        "<C-p>"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
     },
     {
-      "before": ["<leader>", "g", "d"],
-      "commands": ["editor.action.revealDefinition"]
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
     },
     {
-      "before": ["<leader>", "g", "i"],
-      "commands": ["editor.action.goToImplementation"]
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.showDefinitionPreviewHover"
+      ]
     },
     {
-        "before": ["<C-t>"],
-        "commands": ["workbench.action.navigateBack"]
+      "before": [
+        "<Esc>"
+      ],
+      "commands": [
+        ":nohlsearch"
+      ]
     },
     {
-        "before": ["<C-o>"],
-        "commands": ["workbench.action.navigateBack"]
+      "before": [
+        "<leader>",
+        "y"
+      ],
+      "after": [
+        "\"",
+        "+",
+        "y"
+      ]
     },
     {
-        "before": ["<C-i>"],
-        "commands": ["workbench.action.navigateForward"]
+      "before": [
+        "<leader>",
+        "Y"
+      ],
+      "after": [
+        "\"",
+        "+",
+        "Y"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "x"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "x"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a"
+      ],
+      "commands": [
+        "vscode-harpoon.addEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "vscode-harpoon.editEditors"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "h"
+      ],
+      "commands": [
+        "vscode-harpoon.gotoEditor1"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "commands": [
+        "vscode-harpoon.gotoEditor2"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k"
+      ],
+      "commands": [
+        "vscode-harpoon.gotoEditor3"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "l"
+      ],
+      "commands": [
+        "vscode-harpoon.gotoEditor4"
+      ]
+    },
+    {
+      "before": [
+        "s"
+      ],
+      "commands": [
+        "leap.findForward"
+      ]
+    },
+    {
+      "before": [
+        "S"
+      ],
+      "commands": [
+        "leap.findBackward"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "d"
+      ],
+      "commands": [
+        "editor.action.revealDefinition"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "i"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ]
+    },
+    {
+      "before": [
+        "<C-t>"
+      ],
+      "commands": [
+        "workbench.action.navigateBack"
+      ]
+    },
+    {
+      "before": [
+        "<C-o>"
+      ],
+      "commands": [
+        "workbench.action.navigateBack"
+      ]
+    },
+    {
+      "before": [
+        "<C-i>"
+      ],
+      "commands": [
+        "workbench.action.navigateForward"
+      ]
     }
   ],
   "vim.visualModeKeyBindings": [
-    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-    { "before": [">"], "commands": ["editor.action.indentLines"] },
-    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
-    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
-    { "before": ["<leader>", "y"], "after": ["\"", "+", "y"] },
-    { "before": ["<leader>", "Y"], "after": ["\"", "+", "Y"] },
-    { "before": ["<leader>", "d"], "after": ["\"", "_", "d", "d"] },
-    { "before": ["<leader>", "x"], "after": ["\"", "_", "x"] },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "y"
+      ],
+      "after": [
+        "\"",
+        "+",
+        "y"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "Y"
+      ],
+      "after": [
+        "\"",
+        "+",
+        "Y"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "x"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "x"
+      ]
+    },
   ],
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "go.toolsManagement.autoUpdate": true,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "workbench.activityBar.location": "hidden",
   "window.menuBarVisibility": "toggle",
@@ -141,5 +401,13 @@
   "editor.occurrencesHighlight": "off",
   "editor.selectionHighlight": false,
   "editor.gotoLocation.multipleImplementations": "goto",
-  "workbench.editor.showTabs": "single"
+  "workbench.editor.showTabs": "single",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "settingsSync.ignoredExtensions": [
+    "jakebecker.elixir-ls",
+    "ms-dotnettools.csdevkit"
+  ],
+  "editor.stickyScroll.enabled": false,
+  "editor.cursorBlinking": "solid"
 }
