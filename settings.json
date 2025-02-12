@@ -409,5 +409,6 @@
     "ms-dotnettools.csdevkit"
   ],
   "editor.stickyScroll.enabled": false,
-  "editor.cursorBlinking": "solid"
+  "editor.cursorBlinking": "solid",
+  "editor.renderLineHighlight": "none"
 }
