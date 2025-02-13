@@ -393,7 +393,6 @@
   },
   "workbench.activityBar.location": "hidden",
   "window.menuBarVisibility": "toggle",
-  "workbench.colorTheme": "Bearded Theme Arc Reversed",
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontFamily": "JetBrainsMonoNL NerdFont",
@@ -410,5 +409,6 @@
   ],
   "editor.stickyScroll.enabled": false,
   "editor.cursorBlinking": "solid",
-  "editor.renderLineHighlight": "none"
+  "editor.renderLineHighlight": "none",
+  "workbench.colorTheme": "Nord"
 }
