@@ -1,7 +1,6 @@
 {
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
-  "terminal.integrated.fontFamily": "MesloLGS NF",
   "editor.linkedEditing": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "launch": {},
@@ -395,10 +394,12 @@
   "window.menuBarVisibility": "toggle",
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "JetBrainsMonoNL NerdFont",
+  "editor.fontFamily": "MonaspiceAr Nerd Font",
+  "editor.fontSize": 14,
+  "editor.fontWeight": "500",
   "breadcrumbs.enabled": false,
   "editor.occurrencesHighlight": "off",
-  "editor.selectionHighlight": false,
+  "editor.selectionHighlight": true,
   "editor.gotoLocation.multipleImplementations": "goto",
   "workbench.editor.showTabs": "single",
   "workbench.layoutControl.enabled": false,
@@ -410,5 +411,9 @@
   "editor.stickyScroll.enabled": false,
   "editor.cursorBlinking": "solid",
   "editor.renderLineHighlight": "none",
-  "workbench.colorTheme": "Nord"
+  "editor.bracketPairColorization.enabled": false,
+  "emmet.includeLanguages": {
+    "phoenix-heex": "html"
+  },
+  "workbench.colorTheme": "Better Material Theme Darker High Contrast",
 }
