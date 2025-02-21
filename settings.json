@@ -394,9 +394,11 @@
   "window.menuBarVisibility": "toggle",
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "MonaspiceAr Nerd Font",
+  "editor.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontSize": 14,
   "editor.fontWeight": "500",
+  "editor.fontLigatures": true,
   "breadcrumbs.enabled": false,
   "editor.occurrencesHighlight": "off",
   "editor.selectionHighlight": true,
@@ -404,10 +406,6 @@
   "workbench.editor.showTabs": "single",
   "workbench.layoutControl.enabled": false,
   "window.commandCenter": false,
-  "settingsSync.ignoredExtensions": [
-    "jakebecker.elixir-ls",
-    "ms-dotnettools.csdevkit"
-  ],
   "editor.stickyScroll.enabled": false,
   "editor.cursorBlinking": "solid",
   "editor.renderLineHighlight": "none",
@@ -415,5 +413,15 @@
   "emmet.includeLanguages": {
     "phoenix-heex": "html"
   },
-  "workbench.colorTheme": "Better Material Theme Darker High Contrast",
+  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
+  "workbench.colorCustomizations": {
+    "[Rosé Pine Moon (no italics)]": {
+      "editor.background": "#000000",
+      "editorGutter.background": "#000000",
+      "editorCursor.background": "#000000",
+      "editorCursor.foreground": "#ffffff",
+    }
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "diffEditor.ignoreTrimWhitespace": false
 }
