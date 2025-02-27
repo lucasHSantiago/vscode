@@ -380,22 +380,34 @@
   ],
   "update.showReleaseNotes": false,
   "window.menuBarVisibility": "toggle",
-  "terminal.integrated.fontFamily": "MonaspiceNe Nerd Font",
   "window.commandCenter": false,
   "explorer.compactFolders": false,
-  "go.toolsManagement.autoUpdate": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "breadcrumbs.enabled": false,
   //Workbench
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.activityBar.location": "hidden",
-  "workbench.editor.showTabs": "single",
+  "workbench.editor.showTabs": "none",
   "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "Vim Dark Hard",
+  "workbench.colorCustomizations": {
+    "[Rosé Pine (no italics)]": {
+      "editor.background": "#000000",
+      "editorGutter.background": "#000000",
+    },
+    "editorCursor.background": "#000000",
+    "editorCursor.foreground": "#ffffff",
+    "terminalCursor.background": "#000000",
+    "terminalCursor.foreground": "#ffffff",
+  },
+  //Terminal
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 12,
   //Editor
-  "editor.fontFamily": "MonaspiceNe Nerd Font",
-  "editor.fontSize": 14,
-  "editor.fontWeight": "500",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontSize": 12,
+  "editor.fontWeight": "normal",
   "editor.fontLigatures": true,
   "editor.occurrencesHighlight": "off",
   "editor.selectionHighlight": true,
@@ -410,16 +422,18 @@
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.lineNumbers": "relative",
-  //Colors
-  "workbench.colorTheme": "Gruvbox Material Dark",
-  "workbench.colorCustomizations": {
-    "[Rosé Pine Moon (no italics)]": {
-      "editor.background": "#000000",
-      "editorGutter.background": "#000000",
-    },
-    "editorCursor.background": "#000000",
-    "editorCursor.foreground": "#ffffff",
-  },
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.matchBrackets": "near",
+  //Git
+  "git.decorations.enabled": false,
+  "scm.diffDecorations": "none",
+  //Status Bar
+  "ActiveFileInStatusBar.fullpath": false,
   //Zen Mode
   "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.showTabs": "none",
 }
