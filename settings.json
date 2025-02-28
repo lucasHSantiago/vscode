@@ -5,22 +5,6 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
-        "<S-h>"
-      ],
-      "commands": [
-        ":bprevious"
-      ]
-    },
-    {
-      "before": [
-        "<S-l>"
-      ],
-      "commands": [
-        ":bnext"
-      ]
-    },
-    {
-      "before": [
         "<C-h>"
       ],
       "commands": [
@@ -256,7 +240,6 @@
     },
     {
       "before": [
-        "<leader>",
         "g",
         "d"
       ],
@@ -266,7 +249,6 @@
     },
     {
       "before": [
-        "<leader>",
         "g",
         "i"
       ],
@@ -390,7 +372,7 @@
   "workbench.activityBar.location": "hidden",
   "workbench.editor.showTabs": "none",
   "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Vim Dark Hard",
+  "workbench.colorTheme": "Rosé Pine (no italics)",
   "workbench.colorCustomizations": {
     "[Rosé Pine (no italics)]": {
       "editor.background": "#000000",
@@ -407,6 +389,7 @@
   //Editor
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontSize": 12,
+  "editor.lineHeight": 18,
   "editor.fontWeight": "normal",
   "editor.fontLigatures": true,
   "editor.occurrencesHighlight": "off",
@@ -427,6 +410,8 @@
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.scrollbar.horizontalScrollbarSize": 0,
   "editor.matchBrackets": "near",
+  "editor.guides.indentation": false,
+  "editor.folding": false,
   //Git
   "git.decorations.enabled": false,
   "scm.diffDecorations": "none",
