@@ -2,6 +2,10 @@
   //Vim
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
+  "vim.overrideCopy": true,
+  "vim.smartcase": true,
+  "vim.ignorecase": true,
+  "vim.showmodename": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
@@ -258,6 +262,15 @@
     },
     {
       "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
         "<C-t>"
       ],
       "commands": [
@@ -368,11 +381,11 @@
   "breadcrumbs.enabled": false,
   //Workbench
   "workbench.startupEditor": "none",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.activityBar.location": "hidden",
   "workbench.editor.showTabs": "none",
   "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Rosé Pine (no italics)",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Rosetta Theme",
   "workbench.colorCustomizations": {
     "[Rosé Pine (no italics)]": {
       "editor.background": "#000000",
@@ -397,6 +410,7 @@
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.stickyScroll.enabled": false,
   "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "block",
   "editor.renderLineHighlight": "none",
   "editor.bracketPairColorization.enabled": false,
   "editor.semanticHighlighting.enabled": false,
@@ -412,6 +426,7 @@
   "editor.matchBrackets": "near",
   "editor.guides.indentation": false,
   "editor.folding": false,
+  "editor.cursorSurroundingLines": 10,
   //Git
   "git.decorations.enabled": false,
   "scm.diffDecorations": "none",
