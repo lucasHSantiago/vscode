@@ -41,6 +41,26 @@
     },
     {
       "before": [
+        "<C-d>"
+      ],
+      "after": [
+        "<C-d>",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "<C-u>"
+      ],
+      "after": [
+        "<C-u>",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
         "leader",
         "w"
       ],
@@ -254,6 +274,15 @@
     {
       "before": [
         "g",
+        "r"
+      ],
+      "commands": [
+        "editor.action.referenceSearch.trigger"
+      ]
+    },
+    {
+      "before": [
+        "g",
         "i"
       ],
       "commands": [
@@ -378,14 +407,13 @@
   "window.commandCenter": false,
   "explorer.compactFolders": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   //Workbench
   "workbench.startupEditor": "none",
   "workbench.activityBar.location": "hidden",
-  "workbench.editor.showTabs": "none",
+  "workbench.editor.showTabs": "single",
   "workbench.layoutControl.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Rosetta Theme",
+  "workbench.colorTheme": "Vim Dark Hard",
   "workbench.colorCustomizations": {
     "[Rosé Pine (no italics)]": {
       "editor.background": "#000000",
@@ -436,4 +464,8 @@
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": false,
   "zenMode.showTabs": "none",
+  "chat.commandCenter.enabled": false,
+  "window.customTitleBarVisibility": "never",
+  "window.titleBarStyle": "native",
+  "go.toolsManagement.autoUpdate": true,
 }
