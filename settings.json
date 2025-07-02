@@ -6,6 +6,11 @@
   "vim.smartcase": true,
   "vim.ignorecase": true,
   "vim.showmodename": true,
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-c>": true,
+    "<C-f>": true,
+  },
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
@@ -248,22 +253,6 @@
     },
     {
       "before": [
-        "s"
-      ],
-      "commands": [
-        "leap.findForward"
-      ]
-    },
-    {
-      "before": [
-        "S"
-      ],
-      "commands": [
-        "leap.findBackward"
-      ]
-    },
-    {
-      "before": [
         "g",
         "d"
       ],
@@ -413,22 +402,17 @@
   "workbench.activityBar.location": "hidden",
   "workbench.editor.showTabs": "single",
   "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Vim Dark Hard",
   "workbench.colorCustomizations": {
-    "[Rosé Pine (no italics)]": {
-      "editor.background": "#000000",
-      "editorGutter.background": "#000000",
-    },
     "editorCursor.background": "#000000",
     "editorCursor.foreground": "#ffffff",
     "terminalCursor.background": "#000000",
     "terminalCursor.foreground": "#ffffff",
   },
   //Terminal
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.fontSize": 12,
   //Editor
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 12,
   "editor.lineHeight": 18,
   "editor.fontWeight": "normal",
@@ -468,4 +452,18 @@
   "window.customTitleBarVisibility": "never",
   "window.titleBarStyle": "native",
   "go.toolsManagement.autoUpdate": true,
+  //Filter
+  "files.exclude": {
+    "**/vendor/**": true
+  },
+  "search.exclude": {
+    "**/vendor/**": true
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "git.autofetch": true,
+  "makefile.configureOnOpen": true,
+  "debug.closeReadonlyTabsOnEnd": true,
+  "debug.console.closeOnEnd": true,
+  "debug.openExplorerOnEnd": true,
+  "github.copilot.nextEditSuggestions.enabled": false
 }
